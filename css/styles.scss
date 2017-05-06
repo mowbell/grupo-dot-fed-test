@@ -5,6 +5,10 @@ $default-padding:10px;
 $default-line-height:20px;
 
 
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
 .top-nav-bar{
 	&.navbar{
 		min-height:40px;
@@ -24,3 +28,55 @@ $default-line-height:20px;
 		padding: $default-padding 0;
 	}
 }
+
+.site-content{
+	padding-left: 20px;
+	padding-right: 20px;
+
+	.nav-pills > li.active > a{
+		background-color: #5AAFE3;
+	}
+	.nav-pills > li > a{
+		background-color: #F6F7F9;
+		border-radius: 0;
+	}
+
+	.site-plans{
+		padding:70px;
+
+		.site-plans-title{
+			padding: 30px 0;
+		}
+	}
+
+
+	.plan-item-box{
+		-webkit-box-shadow: 0px 7px 11px 0px rgba(138,128,138,1);
+		-moz-box-shadow: 0px 7px 11px 0px rgba(138,128,138,1);
+		box-shadow: 0px 7px 11px 0px rgba(138,128,138,1);
+		text-align: center;
+		margin:30px;
+		padding:20px;
+		padding-top: 0;
+		.plan-item-name{
+			margin-left: -20px;
+			margin-right: -20px;
+			font-size: 2em;
+			padding:20px;
+			color:white;
+			background-color: #00C2FF;
+		}
+
+		.plan-item-internet, .plan-item-voz{
+			padding:20px;
+		}
+	}
+	.site-plans > .row > div:nth-child(2){
+		transform: scale(1.2);
+	}
+}
+footer{
+	text-align: center;
+}
+
+

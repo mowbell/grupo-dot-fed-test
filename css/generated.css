@@ -136,6 +136,9 @@ body {
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px; } }
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .top-nav-bar.navbar {
   min-height: 40px;
   font-size: 80%; }
@@ -149,5 +152,40 @@ body {
   color: white;
   line-height: 20px;
   padding: 10px 0; }
+
+.site-content {
+  padding-left: 20px;
+  padding-right: 20px; }
+  .site-content .nav-pills > li.active > a {
+    background-color: #5AAFE3; }
+  .site-content .nav-pills > li > a {
+    background-color: #F6F7F9;
+    border-radius: 0; }
+  .site-content .site-plans {
+    padding: 70px; }
+    .site-content .site-plans .site-plans-title {
+      padding: 30px 0; }
+  .site-content .plan-item-box {
+    -webkit-box-shadow: 0px 7px 11px 0px #8a808a;
+    -moz-box-shadow: 0px 7px 11px 0px #8a808a;
+    box-shadow: 0px 7px 11px 0px #8a808a;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 0; }
+    .site-content .plan-item-box .plan-item-name {
+      margin-left: -20px;
+      margin-right: -20px;
+      font-size: 2em;
+      padding: 20px;
+      color: white;
+      background-color: #00C2FF; }
+    .site-content .plan-item-box .plan-item-internet, .site-content .plan-item-box .plan-item-voz {
+      padding: 20px; }
+  .site-content .site-plans > .row > div:nth-child(2) {
+    transform: scale(1.2); }
+
+footer {
+  text-align: center; }
 
 /*# sourceMappingURL=generated.css.map */
