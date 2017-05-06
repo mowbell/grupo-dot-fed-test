@@ -1,153 +1,175 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+
 body {
   padding-bottom: 40px;
-  color: #5a5a5a; }
+  color: #5a5a5a;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20; }
+  z-index: 20;
+}
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
-  padding-left: 0; }
-
+  padding-left: 0;
+}
 .navbar-wrapper .navbar {
   padding-right: 15px;
-  padding-left: 15px; }
-
+  padding-left: 15px;
+}
 .navbar-wrapper .navbar .container {
-  width: auto; }
+  width: auto;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+
 /* Carousel base class */
 .carousel {
   height: 385px;
   margin-bottom: 60px;
-  position: static; }
-  .carousel h1 {
-    text-align: left;
-    color: #00C1FF;
-    text-shadow: none; }
-  .carousel p {
-    text-align: left;
-    text-shadow: none;
-    color: #747474; }
-  .carousel .btn-primary {
-    color: white;
-    background: #47C300;
-    border: none; }
-  .carousel .carousel-indicators {
-    top: 70px;
-    left: auto;
-    bottom: auto;
-    right: 20px;
-    width: auto; }
-    .carousel .carousel-indicators li {
-      width: 20px;
-      height: 20px;
-      background: #B3E4EC;
-      border: none; }
-      .carousel .carousel-indicators li.active {
-        background: #41BBD0; }
+  position:static;
+  h1{
+    text-align:left;
+    color:#00C1FF;
+    text-shadow:none;
+  }
+  p{
+    text-align:left;
+    text-shadow:none;
+    color:#747474;
+  }
 
+  .btn-primary{
+    color:white;
+    background:#47C300;
+    border:none
+  }
+
+  .carousel-indicators{
+    top:70px;
+    left:auto;
+    bottom:auto;
+    right:20px;
+    width:auto;
+
+    li{
+      width:20px;
+      height:20px;
+      background:#B3E4EC;
+      border:none;
+      &.active{
+        background:#41BBD0;
+      }
+    }
+  }
+}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  left: 0;
-  right: 50%;
+  left:0;
+  right:50%;
   z-index: 10;
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding-left:20px;
+  padding-right:20px;
+}
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 385px;
-  background-color: #E7E7E5; }
 
+  
+  background-color: #E7E7E5;
+}
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px; }
+  height: 500px;
+}
+
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
+
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 20px;
-  text-align: center; }
-
+  text-align: center;
+}
 .marketing h2 {
-  font-weight: normal; }
-
+  font-weight: normal;
+}
 .marketing .col-lg-4 p {
   margin-right: 10px;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
+
 
 /* Featurettes
 ------------------------- */
+
 .featurette-divider {
-  margin: 80px 0;
-  /* Space out the Bootstrap <hr> more */ }
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
 
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px; }
-
+    margin-top: 20px;
+  }
   .navbar-wrapper .container {
     padding-right: 15px;
-    padding-left: 15px; }
-
+    padding-left: 15px;
+  }
   .navbar-wrapper .navbar {
     padding-right: 0;
-    padding-left: 0; }
+    padding-left: 0;
+  }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px; }
+    border-radius: 4px;
+  }
 
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
-    line-height: 1.4; }
+    line-height: 1.4;
+  }
 
   .featurette-heading {
-    font-size: 50px; } }
+    font-size: 50px;
+  }
+}
+
 @media (min-width: 992px) {
   .featurette-heading {
-    margin-top: 120px; } }
-.top-nav-bar.navbar {
-  min-height: 40px;
-  font-size: 80%; }
-.top-nav-bar.navbar-default {
-  background-color: #005C84;
-  border-color: none; }
-.top-nav-bar.navbar-default .navbar-nav > li > a {
-  color: white;
-  padding: 10px; }
-.top-nav-bar.navbar-default .navbar-nav .nav-bar-separator {
-  color: white;
-  line-height: 20px;
-  padding: 10px 0; }
-
-/*# sourceMappingURL=generated.css.map */
+    margin-top: 120px;
+  }
+}

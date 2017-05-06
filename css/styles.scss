@@ -1,3 +1,26 @@
-body{
-	
+@import 'banner';
+$header_color:#005C84;
+$site_padding:2em;
+$default-padding:10px;
+$default-line-height:20px;
+
+
+.top-nav-bar{
+	&.navbar{
+		min-height:40px;
+		font-size: 80%;
+	};
+	&.navbar-default{
+		background-color: #005C84;
+    	border-color: none;
+	}
+	&.navbar-default .navbar-nav > li > a{
+		color:white;
+		padding: 10px;
+	}
+	&.navbar-default .navbar-nav  .nav-bar-separator{
+		color:white;
+		line-height:$default-line-height;
+		padding: $default-padding 0;
+	}
 }
